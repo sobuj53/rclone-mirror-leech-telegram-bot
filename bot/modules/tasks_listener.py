@@ -551,10 +551,10 @@ class TaskListener:
                 and (RC_INDEX_URL := config_dict["RC_INDEX_URL"])
                 and not private
             ):
-                RC_INDEX_PORT = config_dict["RC_INDEX_PORT"]
+                RC_INDEX_PORT = config_dict["GD_INDEX_URL"]
                 remote, path = rclone_path.split(":", 1)
                 url_path = rutils.quote(f"{path}")
-                share_url = f"{RC_INDEX_URL}:{RC_INDEX_PORT}/[{remote}:]{url_path}"
+                share_url = f"{RC_INDEX_PORT}/{url_path}"
                 if mime_type == "Folder":
                     share_url += "/"
                 buttons.url_buildbutton("Rclone Link 🔗", share_url)
