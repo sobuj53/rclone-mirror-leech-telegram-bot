@@ -1,0 +1,16 @@
+venv
+downloads
+users
+botlog.txt
+cookies.txt
+rclone.conf
+config.env
+*.json
+*.pickle
+*.pyc
+.netrc
+.vscode
+pyrogram.session
+pyrogram_session.session
+Thumbnails/*
+
