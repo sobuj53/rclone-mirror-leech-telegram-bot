@@ -557,7 +557,7 @@ class TaskListener:
                 share_url = f"{RC_INDEX_PORT}/{url_path}"
                 if mime_type == "Folder":
                     share_url += "/"
-                buttons.url_buildbutton("Rclone Link 🔗", share_url)
+                buttons.url_buildbutton("⚡ Index Link 🔗", share_url)
 
             msg += f"\n\n<b>cc: </b>{self.tag}"
             await sendMessage(msg, self.message, buttons.build_menu(1))
